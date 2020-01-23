@@ -1,1 +1,368 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 65.5%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+}
+@font-face {
+  font-family: 'Pacifico';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Pacifico Regular'), local('Pacifico-Regular'), url(https://fonts.gstatic.com/s/pacifico/v16/FwZY7-Qmy14u9lezJ-6H6Mw.ttf) format('truetype');
+}
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  max-width: 100%;
+  width: 90%;
+  margin: 0 auto;
+  justify-content: center;
+}
+@media (max-width: 500px) {
+  .container {
+    width: 100%;
+  }
+}
+.container .nav-container {
+  display: flex;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  width: 100%;
+  justify-content: flex-end;
+}
+.container .nav {
+  width: 30%;
+  display: flex;
+  padding: 1%;
+  justify-content: space-between;
+}
+@media (max-width: 500px) {
+  .container .nav {
+    width: 100%;
+    flex-direction: column;
+  }
+}
+.container .nav a {
+  text-decoration: none;
+  color: black;
+}
+.container .nav a:hover {
+  color: grey;
+}
+@media (max-width: 500px) {
+  .container .nav a {
+    font-size: 1.4rem;
+  }
+}
+.header-container {
+  display: flex;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 1%;
+  margin: 1% 0;
+  border: solid 1px #cfcfcf;
+  background-color: #cfcfcf;
+  border-radius: 3px;
+}
+.header-container .img-container {
+  display: flex;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  width: 100%;
+}
+.header-container .img-container img {
+  width: 26%;
+}
+@media (max-width: 500px) {
+  .header-container .img-container img {
+    width: 100%;
+  }
+}
+.header-container .title-container {
+  display: flex;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+}
+.header-container .title-container h1 {
+  width: 100%;
+  font-size: 2rem;
+  font-weight: bolder;
+  margin: 3% 0;
+}
+.header-container .title-container h1 span {
+  font-family: 'Pacifico', cursive;
+}
+.header-container .title-container h3 {
+  width: 100%;
+  font-size: 1.2rem;
+  margin: 1% 0;
+}
+.header-container .title-container .quoted-person {
+  width: 100%;
+  font-size: 1rem;
+}
+.header-container .title-content-container {
+  display: flex;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  width: 100%;
+}
+.header-container .title-content-container .title-content-p {
+  width: 100%;
+  font-size: 1rem;
+  margin: 1% 0;
+  padding-top: 1%;
+  border-top: solid 1px grey;
+}
+@media (max-width: 500px) {
+  .header-container .title-content-container .title-content-p {
+    margin: 2% 0 8%;
+  }
+}
+.header-container .title-content-container .link-up {
+  width: 14%;
+  padding: 1% 1%;
+  font-size: 1rem;
+  color: white;
+  font-weight: bolder;
+  border: solid 1px #305ffa;
+  background-color: #305ffa;
+  border-radius: 3px;
+}
+.header-container .title-content-container .link-up:hover {
+  border: solid 1px #0e42ec;
+  background-color: #0e42ec;
+  border-radius: 3px;
+  transition: 0.4s;
+}
+.header-container .title-content-container .phone-number {
+  width: 100%;
+  margin: 2% 0 0;
+}
+.section1 {
+  display: flex;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  width: 100;
+  justify-content: space-between;
+}
+.section1 .listen-up {
+  display: flex;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  width: 48%;
+}
+@media (max-width: 500px) {
+  .section1 .listen-up {
+    width: 100%;
+    margin: 0 0 2%;
+  }
+}
+.section1 .listen-up .h2-listen-up {
+  width: 100%;
+  margin: 2% 0;
+}
+.section1 .listen-up .h2-listen-up h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 0 0 2%;
+}
+.section1 .listen-up .listen-up-content {
+  width: 100%;
+}
+.section1 .stuff-good {
+  display: flex;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  width: 48%;
+}
+@media (max-width: 500px) {
+  .section1 .stuff-good {
+    width: 100%;
+    margin: 2% 0;
+  }
+}
+.section1 .stuff-good .h2-stuff-good h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 0 0 10%;
+}
+.section1 .stuff-good .stuff-list {
+  width: 100%;
+}
+.section2 {
+  display: flex;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  width: 100%;
+  margin: 2% 0;
+}
+.section2 .history {
+  width: 100%;
+  border-bottom: solid 2px #cfcfcf;
+  padding: 1% 0;
+  font-size: 1.2rem;
+}
+.section2 table {
+  width: 100%;
+}
+.section2 table tr:nth-last-of-type(odd) {
+  border: solid 1px #cfcfcf;
+  background-color: #cfcfcf;
+  border-radius: 3px;
+}
+footer {
+  display: flex;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  width: 100%;
+  margin: 4% 0 0;
+  padding: 2%;
+  justify-content: center;
+  border: solid 1px dimgrey;
+  background-color: dimgrey;
+  border-radius: 3px;
+}
+footer p {
+  color: white;
+}
+@media (max-width: 500px) {
+  footer {
+    border: solid 1px red;
+    background-color: red;
+    border-radius: 3px;
+  }
+}
